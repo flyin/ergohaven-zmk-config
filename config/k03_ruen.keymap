@@ -50,6 +50,13 @@
             layers = <0>;
             require-prior-idle-ms = <100>;
         };
+
+        cb_ide {
+            bindings = <&sl 6>;
+            key-positions = <27 28>;
+            require-prior-idle-ms = <100>;
+            layers = <0 1>;
+        };
     };
 
     macros {
@@ -194,6 +201,18 @@
             >;
 
             display-name = "Adjust";
+        };
+
+        ide {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "IDE";
         };
     };
 };
