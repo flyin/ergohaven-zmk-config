@@ -216,10 +216,10 @@
 
         ide {
             bindings = <
-&none  &none              &none  &none              &none  &none                              &none  &none              &none  &none  &none  &none
-&none  &none              &none  &kp LS(LA(LG(E)))  &none  &kp LS(LA(LG(T)))                  &none  &none              &none  &none  &none  &none
-&none  &kp LS(LA(LG(A)))  &none  &none              &none  &kp LS(LA(LG(G)))                  &none  &none              &none  &none  &none  &none
-&none  &none              &none  &none              &none  &none              &none    &none  &none  &kp LS(LA(LG(M)))  &none  &none  &none  &none
+&none  &none              &none  &none              &none  &none                              &none  &none              &none  &none              &none  &none
+&none  &none              &none  &kp LS(LA(LG(E)))  &none  &kp LS(LA(LG(T)))                  &none  &none              &none  &kp LS(LA(LG(O)))  &none  &none
+&none  &kp LS(LA(LG(A)))  &none  &none              &none  &kp LS(LA(LG(G)))                  &none  &none              &none  &none              &none  &none
+&none  &none              &none  &none              &none  &none              &none    &none  &none  &kp LS(LA(LG(M)))  &none  &none              &none  &none
                           &none  &none              &none  &none              &none    &none  &none  &none              &none  &none
             >;
 
