@@ -41,24 +41,32 @@
             bindings = <&layer_en>;
             key-positions = <17 18>;
             layers = <1>;
-            require-prior-idle-ms = <200>;
-            timeout-ms = <30>;
+            require-prior-idle-ms = <220>;
+            timeout-ms = <25>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <17 18>;
             layers = <0>;
-            require-prior-idle-ms = <200>;
-            timeout-ms = <30>;
+            require-prior-idle-ms = <220>;
+            timeout-ms = <25>;
         };
 
         cb_ide {
             bindings = <&sl 6>;
-            key-positions = <28 31>;
+            key-positions = <31 28>;
             require-prior-idle-ms = <200>;
             layers = <0 1>;
             timeout-ms = <35>;
+        };
+
+        cb_hyper {
+            bindings = <&sl 7>;
+            key-positions = <31 32>;
+            require-prior-idle-ms = <220>;
+            layers = <0 1>;
+            timeout-ms = <30>;
         };
     };
 
@@ -208,14 +216,26 @@
 
         ide {
             bindings = <
-&trans  &trans             &trans  &trans             &trans  &trans                               &trans  &trans             &trans  &trans  &trans  &trans
-&trans  &trans             &trans  &kp LS(LA(LG(E)))  &trans  &kp LS(LA(LG(T)))                    &trans  &trans             &trans  &trans  &trans  &trans
-&trans  &kp LS(LA(LG(A)))  &trans  &trans             &trans  &kp LS(LA(LG(G)))                    &trans  &trans             &trans  &trans  &trans  &trans
-&trans  &trans             &trans  &trans             &trans  &trans             &trans    &trans  &trans  &kp LS(LA(LG(M)))  &trans  &trans  &trans  &trans
-                           &trans  &trans             &trans  &trans             &trans    &trans  &trans  &trans             &trans  &trans
+&none  &none              &none  &none              &none  &none                              &none  &none              &none  &none  &none  &none
+&none  &none              &none  &kp LS(LA(LG(E)))  &none  &kp LS(LA(LG(T)))                  &none  &none              &none  &none  &none  &none
+&none  &kp LS(LA(LG(A)))  &none  &none              &none  &kp LS(LA(LG(G)))                  &none  &none              &none  &none  &none  &none
+&none  &none              &none  &none              &none  &none              &none    &none  &none  &kp LS(LA(LG(M)))  &none  &none  &none  &none
+                          &none  &none              &none  &none              &none    &none  &none  &none              &none  &none
             >;
 
             label = "IDE";
+        };
+
+        hyper {
+            bindings = <
+&none  &none                  &none  &none  &none                  &none                                  &none                  &none                  &none                  &none                  &none  &none
+&none  &none                  &none  &none  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))                  &none                  &none                  &none                  &none                  &none  &none
+&none  &kp LS(LA(LC(LG(A))))  &none  &none  &none                  &kp LS(LA(LC(LG(G))))                  &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &none  &none
+&none  &none                  &none  &none  &none                  &none                  &none    &none  &none                  &none                  &none                  &none                  &none  &none
+                              &none  &none  &none                  &none                  &none    &none  &none                  &none                  &none                  &none
+            >;
+
+            label = "Hyper";
         };
     };
 };
