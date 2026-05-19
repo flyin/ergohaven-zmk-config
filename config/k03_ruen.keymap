@@ -42,7 +42,7 @@
             key-positions = <17 18>;
             layers = <1>;
             require-prior-idle-ms = <220>;
-            timeout-ms = <30>;
+            timeout-ms = <35>;
         };
 
         cmbru {
@@ -50,7 +50,7 @@
             key-positions = <17 18>;
             layers = <0>;
             require-prior-idle-ms = <220>;
-            timeout-ms = <30>;
+            timeout-ms = <35>;
         };
 
         cb_ide {
